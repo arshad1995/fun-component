@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Inform from "./Inform";
+import Sub from "./operat";
+import { a } from "./operat";
+import { ipl } from "./operat";
+import Todo from "./components/Todo";
+import Text from "./components/Text";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+console.log(ipl.team1);
+let name = "taj";
+class App extends Component {
+  render() {
+    // let { team1, team2, team3, team4 } = ipl;
+    return (
+      <div>
+        {/* {team1}
+        {a.map(val => {
+          return <p>{val.name}</p>;
+        })}
+        <p>{a}</p>
+        {Sub(1, 1, 2, 1)}
+        <Inform firstName={"arshad"} lastName={"basha"} /> */}
+        <Text />
+      </div>
+    );
+  }
 }
-
 export default App;
