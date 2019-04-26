@@ -5,22 +5,15 @@ import { a } from "./operat";
 import { ipl } from "./operat";
 import Todo from "./components/Todo";
 import Text from "./components/Text";
+import Login from "./Login";
+import Result from "./components/Result";
+import Facebook from "./facebook";
 
-console.log(ipl.team1);
-let name = "taj";
 class App extends Component {
   render() {
-    // let { team1, team2, team3, team4 } = ipl;
     return (
       <div>
-        {/* {team1}
-        {a.map(val => {
-          return <p>{val.name}</p>;
-        })}
-        <p>{a}</p>
-        {Sub(1, 1, 2, 1)}
-        <Inform firstName={"arshad"} lastName={"basha"} /> */}
-        <Text />
+        <Facebook />
       </div>
     );
   }

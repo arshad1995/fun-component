@@ -3,8 +3,9 @@ import "../styles/Result.css";
 
 const Result = props => {
   return (
-    <div className="back">
+    <div>
       <p>{props.name}</p>
+      {/* <p>{props.pass}</p> */}
     </div>
   );
 };
